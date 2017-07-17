@@ -1,0 +1,351 @@
+.aw-con {
+  width: 8.933333rem;
+  height: 8.893333rem;
+  -webkit-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+  border: 1px solid #7ec7fc;
+  background-color: #7ec7fc;
+  margin: 0 auto;
+  display: -webkit-flex;
+}
+
+.award {
+  width: 100%;
+  background-color: #f1faff;
+  padding: 0.68rem 0  0.8rem 0;
+}
+
+.aw-in {
+  width: 8.333333rem;
+  height: 8.333333rem;
+  -webkit-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+  background-color: #e1f1fe;
+  padding: 0.12rem;
+}
+
+.aw-block {
+  width: 2.693333rem;
+  height: 2.693333rem;
+  -webkit-border-radius: 0.093333rem;
+  background-color: #fff;
+  margin-left: 0.08rem;
+}
+
+.aw-block-sel {
+  background-color: #f33648;
+}
+
+.aw-in .aw-block-sel>p {
+  color: #fff;
+}
+
+.imgCon {
+  width: 100%;
+  margin-top: 0.666667rem;
+  text-align: center;
+}
+
+.imgCon img {
+  width: 1.666667rem;
+  height: 0.933333rem;
+}
+
+.aw-block>p {
+  text-align: center;
+  color: #ff5353;
+  font-weight: 600;
+  /*no*/
+  margin-top: 0.32rem;
+}
+
+[data-dpr="1"] .aw-block>p {
+  font-size: 11px;
+}
+
+[data-dpr="2"] .aw-block>p {
+  font-size: 22px;
+}
+
+[data-dpr="3"] .aw-block>p {
+  font-size: 33px;
+}
+
+.startBtn {
+  width: 1.76rem;
+  height: 1.76rem;
+  -webkit-border-radius: 1.76rem;
+  border-radius: 1.76rem;
+  background-color: #f33648;
+  position: relative;
+}
+
+.startBtn:after {
+  content: '';
+  width: 1.466667rem;
+  height: 1.466667rem;
+  border-radius: 1.466667rem;
+  position: absolute;
+  background-color: #ff6372;
+  left: 50%;
+  top: 50%;
+  margin-left: -0.733333rem;
+  margin-top: -0.733333rem;
+  display: block;
+  -webkit-box-shadow: 0.133333rem 0.133333rem 0.133333rem #c32b39;
+  box-shadow: 0 0.133333rem 0.133333rem #c32b39;
+}
+
+.startBtn .start {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 999;
+  color: #fff;
+  text-align: center;
+}
+
+[data-dpr="1"] .startBtn .start {
+  font-size: 10px;
+}
+
+[data-dpr="2"] .startBtn .start {
+  font-size: 20px;
+}
+
+[data-dpr="3"] .startBtn .start {
+  font-size: 30px;
+}
+
+.sel-aw {
+  width: 100%;
+  height: 1.733333rem;
+  background: url('../images/sel-bk_02.jpg') center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+.sel-con {
+  height: 100%;
+}
+
+.phoneNum {
+  width: 6.093333rem;
+  height: 0.706667rem;
+  border: none;
+  -webkit-border-radius: 0.053333rem;
+  border-radius: 0.053333rem;
+  padding-left: 0.4rem;
+}
+
+.selBtn {
+  width: 2.093333rem;
+  height: 0.733333rem;
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+  line-height: 0.733333rem;
+  margin-left: 0.32rem;
+  border: none;
+  -webkit-appearance: none;
+}
+
+[data-dpr="1"] .selBtn {
+  font-size: 10px;
+}
+
+[data-dpr="2"] .selBtn {
+  font-size: 20px;
+}
+
+[data-dpr="3"] .selBtn {
+  font-size: 30px;
+}
+
+.list-name {
+  background-color: #f1faff;
+  padding-bottom: 0.693333rem;
+}
+
+.sub-title {
+  text-align: center;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  position: relative;
+}
+
+[data-dpr="1"] .sub-title {
+  font-size: 22px;
+}
+
+[data-dpr="2"] .sub-title {
+  font-size: 44px;
+}
+
+[data-dpr="3"] .sub-title {
+  font-size: 66px;
+}
+
+.sub-title i {
+  position: absolute;
+  display: inline-block;
+}
+
+.laba {
+  width: 1.08rem;
+  height: 0.933333rem;
+  background: url("../images/laba.png") center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  left: 1.733333rem;
+  top: 0.4rem;
+}
+
+.hand {
+  width: 1.16rem;
+  height: 0.666667rem;
+  background: url("../images/hand.png") center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  left: 6.093333rem;
+  top: 0.666667rem;
+}
+
+.line {
+  width: 2.706667rem;
+  height: 0.08rem;
+  background: url("../images/line.png") center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  left: 3.12rem;
+  top: 1.293333rem;
+}
+
+.out-frame {
+  width: 8.96rem;
+  height: 4.093333rem;
+  border: 0.04rem solid #666666;
+  -webkit-border-radius: 0.093333rem;
+  border-radius: 0.093333rem;
+}
+
+.inner-frame {
+  width: 8.533333rem;
+  height: 3.506667rem;
+  border: 0.04rem dashed #666666;
+  -webkit-border-radius: 0.093333rem;
+  border-radius: 0.093333rem;
+  padding-top: 0.133333rem;
+}
+
+.users {
+  color: #000;
+  text-align: center;
+  line-height: 0.666667rem;
+}
+
+[data-dpr="1"] .users {
+  font-size: 12px;
+}
+
+[data-dpr="2"] .users {
+  font-size: 24px;
+}
+
+[data-dpr="3"] .users {
+  font-size: 36px;
+}
+
+.slider .users {
+  height: 0.666667rem;
+}
+
+.liwu {
+  width: 1.426667rem;
+  height: 1.08rem;
+  background: url("../images/box.png") center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  left: 1.253333rem;
+  top: 0.586667rem;
+}
+
+.heart {
+  width: 0.853333rem;
+  height: 0.653333rem;
+  background: url("../images/heart.png") center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  left: 6.146667rem;
+  top: 0.746667rem;
+}
+
+.line2 {
+  width: 2.706667rem;
+  height: 0.08rem;
+  background: url("../images/line2.png") center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  left: 3.12rem;
+  top: 1.293333rem;
+}
+
+.rules {
+  background: url("../images/rule-bk_02.png") center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  padding-bottom: 0.813333rem;
+}
+
+.rules .sub-title {
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  height: 1.653333rem;
+  line-height: 1.653333rem;
+  background-color: #f1faff;
+}
+
+.footer a {
+  color: #288cd3;
+  text-decoration: underline;
+}
+
+[data-dpr="1"] .footer a {
+  font-size: 15px;
+}
+
+[data-dpr="2"] .footer a {
+  font-size: 30px;
+}
+
+[data-dpr="3"] .footer a {
+  font-size: 45px;
+}
+
+.rules .users {
+  text-align: left;
+}
+
+.rules .out-frame {
+  width: 8.64rem;
+  height: auto;
+  padding: 0.16rem;
+}
+
+.rules .inner-frame {
+  width: 8.133333rem;
+  padding: 0.373333rem 0.2rem;
+  height: auto;
+}
+
+#txtScroll {
+  overflow: hidden;
+  position: relative;
+  height: 3.133333rem;
+}

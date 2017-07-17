@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>个人中心</title>
+  <script src="js/lib/flexible.js"></script>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/perCenter.css">
+  <link rel="stylesheet" href="css/dialog.css">
+  <link rel="stylesheet" href="css/iosSelect.css">
+</head>
+
+<body>
+  <section class="banner">
+  </section>
+  <section class=" my-award">
+    <div class="num-tip">
+      还有一次抽奖机会
+    </div>
+    <p class="my-aw"><a href="myAward.html">我的奖品</a></p>
+    <div class="award">
+      <div class="aw-con flex flex-align-center flex-pack-center ">
+        <div class="aw-in flex flex-hw   flex-align-center">
+          <div class="aw-block bl aw-block-sel ">
+            <div class="imgCon ">
+              <img src="images/aw-img.png" alt="">
+            </div>
+            <p>手机充值卡</p>
+          </div>
+          <div class="aw-block bl">
+            <div class="imgCon ">
+              <img src="images/aw-img.png" alt="">
+            </div>
+            <p>XX元优惠券</p>
+          </div>
+          <div class="aw-block bl">
+            <div class="imgCon ">
+              <img src="images/aw-img.png" alt="">
+            </div>
+            <p>未中奖</p>
+          </div>
+          <div class="aw-block bl">
+            <div class="imgCon ">
+              <img src="images/aw-img.png" alt="">
+            </div>
+            <p>电子资料</p>
+          </div>
+          <div class="aw-block flex flex-pack-center flex-align-center">
+            <div class="startBtn">
+              <p class="start"> START<br/>开始转盘</p>
+            </div>
+          </div>
+          <div class="aw-block bl">
+            <div class="imgCon ">
+              <img src="images/aw-img.png" alt="">
+            </div>
+            <p>XX参考书</p>
+          </div>
+          <div class="aw-block bl">
+            <div class="imgCon ">
+              <img src="images/aw-img.png" alt="">
+            </div>
+            <p>未中奖</p>
+          </div>
+          <div class="aw-block bl">
+            <div class="imgCon ">
+              <img src="images/aw-img.png" alt="">
+            </div>
+            <p>未中奖</p>
+          </div>
+          <div class="aw-block bl">
+            <div class="imgCon ">
+              <img src="images/aw-img.png" alt="">
+            </div>
+            <p>未中奖</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--抽奖规则-->
+  <section class="rules">
+    <div class="content">
+      <h2 class="sub-title">
+        抽奖规则
+        <i class="liwu"></i>
+        <i class="heart"></i>
+        <i class="line2"></i>
+      </h2>
+      <div class="out-frame flex flex-align-center flex-pack-center">
+        <div class="inner-frame ">
+          <p class="users">1.每次活动期内，每个IP只可抽奖一次。</p>
+          <p class="users">2.中奖后请先填写手机号进行登记，登记后可兑换奖品。</p>
+          <p class="users">如登记后未确认兑换信息，可通过查询中奖记录再次兑 换。如中奖后未进行登记，奖品不可进行兑换。
+          </p>
+          <p class="users">3.抽奖活动解释权归天道教育所有，有问题请联系XXXXX</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="change">
+    <div class="content">
+      <h2 class="sub-title">获取更多抽奖机会
+        <i class="flag"></i>
+        <i class="qianbi"></i>
+        <i class="line3"></i>
+      </h2>
+      <div class="seach">
+        <input type="text" class="link" id="copyLink" value="www.baidu.com"><input data-clipboard-action="copy" data-clipboard-target="#copyLink" type="button" value="复制" class="copy">
+        <p>
+          复制链接，邀请好友注册。好友注册成功后，可获得一次抽奖 机会
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--弹框隐藏-->
+  <div class="mask" id="mask">
+
+    <!--登录后未中奖-->
+    <div class="get-aw aw-dialog" id="wzj">
+      <i class=" mask-close iconfont">&#xe6b5;</i>
+      <div class="aw-result">
+        <div class="side-l">
+        </div>
+        <div class="result-mid">
+          <div class="vertical-mid">
+            <span>很遗憾您没有中奖，<br/>下次再来吧</span>
+          </div>
+        </div>
+        <div class="side-r"></div>
+      </div>
+      <div class="btnDiv">
+        <input type="button" class="dia-btn" value="确定">
+      </div>
+    </div>
+    <!--手机充值卡-->
+    <div class="res-dialog" id="czk">
+      <i class=" mask-close iconfont">&#xe6b5;</i>
+      <div class="dia-box">
+
+      </div>
+      <h2 class="dia-title">恭喜您获得100元手机充值卡</h2>
+      <p class="dia-detail ">请填写您的手机号进行兑奖，天道教育的老 师将在12小时内向您发放奖品，请注意查收。
+      </p>
+      <ul class="dia-info">
+        <li>
+          <label for="">手机号</label><input type="text">
+        </li>
+      </ul>
+      <input type="button" value="确定" class="ensure ok">
+    </div>
+    <!--电子资料-->
+    <div class="res-dialog" id="dzzl">
+      <i class=" mask-close iconfont">&#xe6b5;</i>
+      <div class="dia-box">
+
+      </div>
+      <h2 class="dia-title">恭喜您获得XXXX电子资料</h2>
+      <p class="dia-detail ">请填写您的邮箱进行兑奖，天道教育的老师 将在12小时内向您发放奖品，请注意查收。
+      </p>
+      <ul class="dia-info">
+        <li>
+          <label for="">邮箱</label><input type="text">
+        </li>
+      </ul>
+      <input type="button" value="确定" class="ensure ok">
+    </div>
+    <!--优惠券-->
+    <div class="res-dialog" id="yhq">
+      <i class=" mask-close iconfont">&#xe6b5;</i>
+      <div class="dia-box">
+      </div>
+      <h2 class="dia-title">恭喜您获得XXX优惠券</h2>
+      <p class="dia-detail ">请填写您的手机号进行兑奖，天道教育的老 师将在12小时内向您发放奖品，请注意查收。
+      </p>
+      <ul class="dia-info">
+        <li>
+          <label for="">手机号</label><input type="text">
+        </li>
+      </ul>
+      <input type="button" value="确定" class="ensure ok">
+    </div>
+    <!--登录后参考书-->
+    <div class="res-dialog txdz" id="dlhcks">
+      <i class=" mask-close iconfont">&#xe6b5;</i>
+      <div class="dia-box">
+      </div>
+      <h2 class="dia-title">恭喜您获得XXXX参考书</h2>
+      <p class="dia-detail ">请填写您的收货地址进行兑换，天道教育的老 师将在12小时内向您发放奖品，请注意查收。
+      </p>
+      <div class="add-tab">
+        <input type="radio" checked="true" name="address">使用已有地址<input type="radio" name="address">填写新地址
+      </div>
+      <ul class="dia-info add-list" id="now-address">
+        <li><span class="sh-person">收货人</span><span class="user-city">所在地区</span><span class="detail-xxdz">详细地址</span><span class="user-ph">电话/手机</span> </li>
+        <li>
+          <span class="sh-person"> <input type="radio" checked="true" name="use-name">王平</span><span class="user-city">北京</span><span class="detail-xxdz">海淀区XXXX</span><span class="user-phone">15737954725</span>
+        </li>
+        <li>
+          <span class="sh-person"> <input type="radio"  name="use-name">王平</span><span class="user-city">北京</span><span class="detail-xxdz">海淀区XXXX</span><span class="user-phone">15737954725</span>
+        </li>
+      </ul>
+      <ul class="dia-info add-list" id="new-address">
+        <li> <label for="">收件人</label><input type="text"></li>
+        <li> <label for="">手机号</label><input type="text"></li>
+        <li id="provice"> <label for="">省市地区</label><input type="text" onfocus="this.blur();" value="" data-city-code="510100" data-province-code="510000" data-district-code="510105" id="show_contact"></li>
+        <li> <label for="">详细地址</label><input type="text"></li>
+        <li style="border-bottom:none"><i class="check-box ch1 iconfont" data-checked="false">&#xe624;</i> 保存到我的收货地址</li>
+      </ul>
+      <input type="button" value="确定" class="ensure ok">
+    </div>
+
+  </div>
+  <script src="js/lib/zepto.min.js"></script>
+  <script src="js/components/award.js"></script>
+  <script src="js/lib/iosSelect.js"></script>
+  <script src="js/lib/iscroll.js"></script>
+  <script src="js/components/areaData_v2.js"></script>
+  <script src="js/lib/clipboard.min.js"></script>
+  <script src="js/perCenter.js"></script>
+</body>
+
+</html>

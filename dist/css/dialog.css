@@ -1,0 +1,475 @@
+.mask {
+  position: fixed;
+  z-index: 9999;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.mask-close {
+  display: inline-block;
+  position: fixed;
+  top: 0.133333rem;
+  right: 0.133333rem;
+}
+
+[data-dpr="1"] .mask-close {
+  font-size: 16px;
+}
+
+[data-dpr="2"] .mask-close {
+  font-size: 32px;
+}
+
+[data-dpr="3"] .mask-close {
+  font-size: 48px;
+}
+
+.aw-dialog {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 7.466667rem;
+  background: url("../images/dia-bk.png") center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+.get-aw {
+  height: 4.08rem;
+  padding-top: 0.573333rem;
+}
+
+.no-aw {
+  height: 4.306667rem;
+  padding-top: 0.746667rem;
+}
+
+.aw-result {
+  height: 71.89%;
+  overflow: hidden;
+  margin-left: 0.853333rem;
+}
+
+.aw-result>div {
+  float: left;
+}
+
+.aw-result div[class^='side'] {
+  width: 0.013333rem;
+  height: 91.36%;
+  border: 0.04rem solid #000000;
+  -webkit-border-radius: 0.04rem;
+  margin-top: 0.08rem;
+}
+
+.result-mid {
+  position: relative;
+}
+
+.result-mid>div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 4.36rem;
+  height: 49.5%;
+  border: 0.04rem solid #000;
+  background-color: #ffcc21;
+  text-align: center;
+  line-height: 0.533333rem;
+}
+
+.no-aw .result-mid>div {
+  top: 57%;
+}
+
+.result-mid {
+  width: 5.253333rem;
+  height: 98.63%;
+  background: url("../images/dia-frame.png") center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  margin: 0 0.173333rem;
+  text-align: center;
+}
+
+.result-mid span {
+  font-size: 0.293333rem;
+}
+
+.result-mid>p {
+  font-size: 0.32rem;
+  color: #666;
+  margin-top: 0.44rem;
+}
+
+.btnDiv {
+  text-align: center;
+}
+
+.dia-btn {
+  width: 2.106667rem;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  color: #5f9832;
+  text-align: center;
+  background-color: #f3f3eb;
+  margin-top: 0.266667rem;
+  -webkit-border-radius: 0.053333rem;
+  border-radius: 0.053333rem;
+  -webkit-appearance: none;
+  border: 1px solid #5f9832;
+}
+
+.res-dialog {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  width: 7.466667rem;
+  padding: 1rem 0.773333rem 0.466667rem 0.773333rem;
+  background-color: #fff;
+  -webkit-border-radius: 0.053333rem;
+  border-radius: 0.053333rem;
+}
+
+.dia-box {
+  width: 4.68rem;
+  height: 2.373333rem;
+  margin: -2.586667rem auto 0;
+  background: url("../images/dia-box.png") center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+.dia-title {
+  color: #333;
+  text-align: center;
+  width: 100%;
+  line-height: 0.4rem;
+  margin-top: 0.24rem;
+}
+
+[data-dpr="1"] .dia-title {
+  font-size: 15px;
+}
+
+[data-dpr="2"] .dia-title {
+  font-size: 30px;
+}
+
+[data-dpr="3"] .dia-title {
+  font-size: 45px;
+}
+
+.dia-detail {
+  color: #666;
+  line-height: 0.466667rem;
+  margin-top: 0.106667rem;
+}
+
+[data-dpr="1"] .dia-detail {
+  font-size: 11px;
+}
+
+[data-dpr="2"] .dia-detail {
+  font-size: 22px;
+}
+
+[data-dpr="3"] .dia-detail {
+  font-size: 33px;
+}
+
+.dia-info {
+  margin-top: 0.44rem;
+}
+
+.dia-info span {
+  display: inline-block;
+}
+
+.dia-info li {
+  width: 5.92rem;
+  height: 1.146667rem;
+  line-height: 1.146667rem;
+  border-top: 1px solid #cdcdcd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  /* 09版 */
+  -webkit-box-align: center;
+  /* 12版 */
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+
+.dia-info li:last-of-type {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.dia-info label {
+  display: inline-block;
+  color: #000;
+  margin-right: 0.133333rem;
+  width: 2rem;
+  vertical-align: middle;
+}
+
+[data-dpr="1"] .dia-info label {
+  font-size: 13px;
+}
+
+[data-dpr="2"] .dia-info label {
+  font-size: 26px;
+}
+
+[data-dpr="3"] .dia-info label {
+  font-size: 39px;
+}
+
+.dia-info li input[type="text"] {
+  width: 4rem;
+  height: 1.146667rem;
+  vertical-align: middle;
+  color: #000;
+  border: none;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+[data-dpr="1"] .dia-info li input[type="text"] {
+  font-size: 13px;
+}
+
+[data-dpr="2"] .dia-info li input[type="text"] {
+  font-size: 26px;
+}
+
+[data-dpr="3"] .dia-info li input[type="text"] {
+  font-size: 39px;
+}
+
+.getAuth {
+  width: 2.106667rem;
+  height: 0.72rem;
+  color: #6baa24;
+  text-align: center;
+  line-height: 0.72rem;
+  background-color: #fff;
+  -webkit-border-radius: 0.053333rem;
+  border-radius: 0.053333rem;
+  border: 1px solid #6baa24;
+  -webkit-appearance: none;
+}
+
+.ensure {
+  width: 100%;
+  height: 0.933333rem;
+  background-color: #ffcc21;
+  color: #000;
+  text-align: center;
+  line-height: 0.933333rem;
+  border: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0.053333rem;
+  border-radius: 0.053333rem;
+  margin-top: 0.253333rem;
+}
+
+[data-dpr="1"] .ensure {
+  font-size: 13px;
+}
+
+[data-dpr="2"] .ensure {
+  font-size: 26px;
+}
+
+[data-dpr="3"] .ensure {
+  font-size: 39px;
+}
+
+.add-tab {
+  margin-top: 0.466667rem;
+}
+
+.add-tab {
+  color: #333;
+}
+
+[data-dpr="1"] .add-tab {
+  font-size: 12px;
+}
+
+[data-dpr="2"] .add-tab {
+  font-size: 24px;
+}
+
+[data-dpr="3"] .add-tab {
+  font-size: 36px;
+}
+
+.add-tab input[type="radio"] {
+  width: 0.24rem;
+  height: 0.24rem;
+  margin-right: 0.186667rem;
+  margin-left: 0.533333rem;
+}
+
+.dia-info input[type="radio"] {
+  width: 0.24rem;
+  height: 0.24rem;
+}
+
+.txdz {
+  width: 8.493333rem;
+  padding-left: 0.373333rem;
+  padding-right: 0.373333rem;
+}
+
+.txdz .dia-info li {
+  min-height: 1.146667rem;
+  height: auto;
+  width: 7.466667rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  /*padding: 0.2rem 0;*/
+  -webkit-box-align: center;
+  /* 12版 */
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+
+.txdz li span {
+  line-height: 0.4rem;
+  text-align: center;
+  vertical-align: middle;
+  color: #000;
+  word-break: break-all;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  flex: 2;
+}
+
+[data-dpr="1"] .txdz li span {
+  font-size: 11px;
+}
+
+[data-dpr="2"] .txdz li span {
+  font-size: 22px;
+}
+
+[data-dpr="3"] .txdz li span {
+  font-size: 33px;
+}
+
+.txdz li .sh-person {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.txdz li .user-city {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+#new-address {
+  display: none;
+}
+
+.zjjl {
+  width: 8.48rem;
+  padding-left: 0.413333rem;
+  padding-right: 0.413333rem;
+}
+
+.zjjl .dia-info li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 7.653333rem;
+}
+
+.zjjl .dia-info li span {
+  text-align: center;
+  word-break: break-all;
+  line-height: 0.48rem;
+}
+
+.zjjl .dia-info li span {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.dui {
+  font-style: normal;
+  color: #488536;
+}
+
+#authPhone .ensure {
+  background-color: rgba(255, 204, 33, 0.5);
+}
+
+.check-box {
+  width: 0.533333rem;
+  font-style: normal;
+  display: inline-block;
+  margin-right: 0.133333rem;
+}
+
+[data-dpr="1"] .check-box {
+  font-size: 19px;
+}
+
+[data-dpr="2"] .check-box {
+  font-size: 38px;
+}
+
+[data-dpr="3"] .check-box {
+  font-size: 57px;
+}
+
+.ch2 {
+  display: none;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../iconfont/iconfont.eot');
+  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), url('../iconfont/iconfont.woff') format('woff'), url('../iconfont/iconfont.ttf') format('truetype'), url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 0.213333rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}

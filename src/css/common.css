@@ -1,0 +1,221 @@
+.header{
+    height:88px;
+    width:92%;
+    padding:0px 4% 0px 4%;/*no*/
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+}
+.content{
+    width:672px;
+    margin: 0px auto;
+}
+input::-webkit-input-placeholder{color:#999;font-size:24px;/*px*/}
+.flex{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+}
+.header a{
+    color:#333;
+    font-size:24px;/*px*/
+}
+.flex-align-center{
+    /* 09版 */
+    -webkit-box-align: center;
+    /* 12版 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+.flex-pack-center{
+    /* 09版 */
+    -webkit-box-pack: center;
+    /* 12版 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+   }
+.flex-hw {
+    /*横向换行*/
+    /* 09版 */
+    /*-webkit-box-lines: multiple;*/
+    /* 12版 */
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex-pack-justify{
+    -webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;
+}
+.flex-pack-around{
+    -webkit-box-pack:center;-webkit-justify-content:space-around;-ms-flex-pack:center;justify-content:space-around;
+
+}
+.banner{
+    width:750px;
+    height:497px;
+    background:url("../images/banner_02.jpg") center center no-repeat;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    
+}
+/*抽奖转盘*/
+.aw-con{
+    width:670px;
+    height:667px;
+    -webkit-border-radius: 6px;
+    border-radius:6px;
+    border:1px solid #7ec7fc;/*no*/
+    background-color:#7ec7fc;
+    margin:0px auto;
+    display:-webkit-flex;
+}
+.award{
+    width:100%;
+    background-color:#f1faff;
+    padding:51px 0  60px 0;
+}
+.aw-in{
+    width:625px;
+    height:625px;
+    -webkit-border-radius: 6px;
+    border-radius:6px;
+    background-color:#e1f1fe;
+    padding:9px;
+}
+.aw-block{
+    width:202px;
+    height:202px;
+    -webkit-border-radius: 7px;
+    background-color:#fff;
+    margin-left:6px;
+}
+.aw-block-sel{
+    background-color:#f33648;
+}
+.aw-in .aw-block-sel>p{
+    color:#fff;
+}
+.imgCon{
+    width:100%;
+    margin-top:50px;
+    text-align:center;
+}
+.imgCon img{
+    width:125px;
+    height:70px;
+}
+.aw-block>p{
+    text-align:center;
+    font-size:22px;/*px*/
+    color:#ff5353;
+    font-weight:600;/*no*/
+    margin-top:24px;
+}
+.startBtn{
+    width:132px;
+    height:132px;
+    -webkit-border-radius: 132px;
+    border-radius:132px;
+    background-color:#f33648;
+    position:relative;
+}
+.startBtn:after{
+    content:'';
+    width:110px;
+    height:110px;
+    border-radius:110px;
+    position:absolute;
+    background-color:#ff6372;
+    left:50%;
+    top:50%;
+    margin-left:-55px;
+    margin-top:-55px;
+    display:block;
+    -webkit-box-shadow: 10px 10px 10px #c32b39;
+    box-shadow: 0px 10px 10px #c32b39;
+}
+.startBtn .start{
+    width:100%;
+    position:absolute;
+    left:50%;
+    top:50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    color:#fff;
+    text-align:center;
+    font-size:20px;/*px*/
+}
+.rules{
+    background:url("../images/rule-bk_02.png") center center no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size:100% 100%;
+    padding-bottom:61px;
+}
+.rules .sub-title{
+    color:#fff;
+}
+.rules .users{
+    font-size:24px;/*px*/
+    color:#000;
+    line-height:50px;
+    text-align:left;
+}
+.rules .out-frame{
+    width:648px;
+    height:auto;
+    padding:12px;
+}
+.rules .inner-frame{
+    width:610px;
+    padding :28px 15px;
+
+    height:auto;
+}
+.liwu{
+    width:107px;
+    height:81px;
+    background:url("../images/box.png") center center no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size:100% 100%;
+    left:94px;
+    top:44px;
+}
+.heart{
+    width:64px;
+    height:49px;
+    background:url("../images/heart.png") center center no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size:100% 100%;
+    left:461px;
+    top:56px;
+}
+.line2{
+    width:203px;
+    height:6px;
+    background:url("../images/line2.png") center center no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size:100% 100%;
+    left:234px;
+    top:97px;
+}
+.vertical-mid:after{
+    display:inline-block;
+    width:0;
+    height:100%;
+    content:"";
+    vertical-align:middle;
+    overflow:hidden;
+}
+.vertical-mid *{
+     display:inline-block;
+    vertical-align:middle;
+}

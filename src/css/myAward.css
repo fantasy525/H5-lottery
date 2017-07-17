@@ -1,0 +1,90 @@
+html{
+    height:100%;
+}
+body{
+    height:100%;
+    background-color:#f1faff;
+}
+.header-ban{
+    height:525px;
+    background:url("../images/bk2.png") center center no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size:100% 100%;
+    padding-top:22px;
+}
+.back{
+    display:inline-block;
+    color:#fff;
+    font-size:24px;/*px*/
+    text-align:right;
+    margin-left:27px;
+}
+.back i{
+    display:inline-block;
+    width:14px;
+    height:24px;
+    background:url("../images/back.png") 0 0 no-repeat;
+    -webkit-background-size: 100% 100% ;
+    background-size:100% 100%;
+    vertical-align: bottom;
+    margin-right:13px;
+}
+.award-list{
+    padding:0 26.5px;
+    width:697px;
+}
+.list-head{
+    width:652px;
+    height:86px;
+    margin-top:-62px;/*no*/
+    border:1px solid #ececec;
+    -webkit-border-radius: 7px;
+    border-radius:7px;
+    padding-left:45px;
+    line-height:86px;
+    background-color:#ffffff;
+
+}
+.list-head span{
+    display:inline-block;
+    color:#72b026;
+    font-size:24px;/*px*/
+}
+.list-head span:nth-of-type(2){
+    margin-left:119px;
+}
+.list-head span:nth-of-type(3){
+    margin-left:153px;
+}
+.list-items{
+    font-size:20px;/*px*/
+    color:#666;
+    border:1px solid #ececec;
+    -webkit-border-radius: 7px;
+    padding:0px 15px;
+    margin-top:18px;
+    background-color:#fff;
+}
+.list-items li{
+    border-bottom:1px solid #cdcdcd;
+    line-height:26px;
+    padding:26px 0px 26px 26px;
+}
+.list-items li:last-child{
+    border-bottom:none;
+}
+.list-items li span{
+    display:inline-block;
+    vertical-align: middle;
+}
+.aw-name{
+    width:216px;
+    color:#333;
+}
+.aw-time{
+    width:246px;
+}
+.dui{
+    font-style:normal;
+    color:#6baa24;
+}

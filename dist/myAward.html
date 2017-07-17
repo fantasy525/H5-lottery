@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>我的奖品</title>
+  <script src="js/lib/flexible.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/myAward.css">
+  <link rel="stylesheet" href="css/dialog.css">
+  <link rel="stylesheet" href="css/iosSelect.css">
+</head>
+
+<body>
+  <header class="header-ban">
+    <a href="javascript:window.history.go(-1)" class="back"><i></i>返回</a>
+  </header>
+  <section>
+    <div class="award-list">
+      <div class="list-head">
+        <span>奖品名称</span><span>中奖时间</span><span>状态</span>
+      </div>
+      <ul class="list-items">
+        <li><span class="aw-name aw-yhq">XXXX课程优惠券</span><span class="aw-time">2017-03-01  10:10:10</span><span class="aw-status">已兑换</span></li>
+        <li><span class="aw-name aw-yhq">XXXX课程优惠券</span><span class="aw-time">2017-03-01  10:10:10</span><span class="aw-status">已兑换</span></li>
+        <li><span class="aw-name ">100元手机充值卡</span><span class="aw-time">2017-03-01  10:10:10</span><span class="aw-status">未兑换,<i class="dui" data-index="0">现在兑换</i></span></li>
+      </ul>
+    </div>
+  </section>
+  <!--弹框隐藏-->
+  <div class="mask" id="mask">
+    <!--登录后未中奖-->
+    <div class="get-aw aw-dialog" id="wzj">
+      <i class=" mask-close iconfont">&#xe6b5;</i>
+      <div class="aw-result">
+        <div class="side-l">
+        </div>
+        <div class="result-mid">
+          <div class="vertical-mid">
+            <span>很遗憾您没有中奖，<br/>下次再来吧</span>
+          </div>
+        </div>
+        <div class="side-r"></div>
+      </div>
+      <div class="btnDiv">
+        <input type="button" class="dia-btn" value="确定">
+      </div>
+    </div>
+    <!--手机充值卡-->
+    <div class="res-dialog" id="czk">
+      <i class=" mask-close iconfont">&#xe6b5;</i>
+      <div class="dia-box">
+
+      </div>
+      <h2 class="dia-title">恭喜您获得100元手机充值卡</h2>
+      <p class="dia-detail ">请填写您的手机号进行兑奖，天道教育的老 师将在12小时内向您发放奖品，请注意查收。
+      </p>
+      <ul class="dia-info">
+        <li>
+          <label for="">手机号</label><input type="text">
+        </li>
+      </ul>
+      <input type="button" value="确定" class="ensure ok">
+    </div>
+    <!--电子资料-->
+    <div class="res-dialog" id="dzzl">
+      <i class=" mask-close iconfont">&#xe6b5;</i>
+      <div class="dia-box">
+
+      </div>
+      <h2 class="dia-title">恭喜您获得XXXX电子资料</h2>
+      <p class="dia-detail ">请填写您的邮箱进行兑奖，天道教育的老师 将在12小时内向您发放奖品，请注意查收。
+      </p>
+      <ul class="dia-info">
+        <li>
+          <label for="">邮箱</label><input type="text">
+        </li>
+      </ul>
+      <input type="button" value="确定" class="ensure ok">
+    </div>
+    <!--优惠券-->
+    <div class="res-dialog" id="yhq">
+      <i class=" mask-close iconfont">&#xe6b5;</i>
+      <div class="dia-box">
+      </div>
+      <h2 class="dia-title">恭喜您获得XXX优惠券</h2>
+      <p class="dia-detail ">请填写您的手机号进行兑奖，天道教育的老 师将在12小时内向您发放奖品，请注意查收。
+      </p>
+      <ul class="dia-info">
+        <li>
+          <label for="">手机号</label><input type="text">
+        </li>
+      </ul>
+      <input type="button" value="确定" class="ensure ok">
+    </div>
+    <!--登录后参考书-->
+    <div class="res-dialog txdz" id="dlhcks">
+      <i class=" mask-close iconfont">&#xe6b5;</i>
+      <div class="dia-box">
+      </div>
+      <h2 class="dia-title">恭喜您获得XXXX参考书</h2>
+      <p class="dia-detail ">请填写您的收货地址进行兑换，天道教育的老 师将在12小时内向您发放奖品，请注意查收。
+      </p>
+      <div class="add-tab">
+        <input type="radio" checked="true" name="address">使用已有地址<input type="radio" name="address">填写新地址
+      </div>
+      <ul class="dia-info add-list" id="now-address">
+        <li><span class="sh-person">收货人</span><span class="user-city">所在地区</span><span class="detail-xxdz">详细地址</span><span class="user-ph">电话/手机</span> </li>
+        <li>
+          <span class="sh-person"> <input type="radio" checked="true" name="use-name">王平</span><span class="user-city">北京</span><span class="detail-xxdz">海淀区XXXX</span><span class="user-phone">15737954725</span>
+        </li>
+        <li>
+          <span class="sh-person"> <input type="radio"  name="use-name">王平</span><span class="user-city">北京</span><span class="detail-xxdz">海淀区XXXX</span><span class="user-phone">15737954725</span>
+        </li>
+      </ul>
+      <ul class="dia-info add-list" id="new-address">
+        <li> <label for="">收件人</label><input type="text"></li>
+        <li> <label for="">手机号</label><input type="text"></li>
+        <li id="provice"> <label for="">省市地区</label><input type="text" onfocus="this.blur();" value="" data-city-code="510100" data-province-code="510000" data-district-code="510105" id="show_contact"></li>
+        <li> <label for="">详细地址</label><input type="text"></li>
+        <li style="border-bottom:none"><i class="check-box ch1 iconfont" data-checked="false">&#xe624;</i> 保存到我的收货地址</li>
+      </ul>
+      <input type="button" value="确定" class="ensure ok">
+    </div>
+    <!--中奖记录-->
+    <div class="res-dialog zjjl" id="zjjl">
+      <i class=" mask-close iconfont">&#xe6b5;</i>
+      <div class="dia-box">
+      </div>
+      <h2 class="dia-title">中奖记录</h2>
+      <ul class="dia-info">
+        <li class="flex flex-align-center ">
+          <span>奖品名称</span><span>中奖时间</span><span>状态</span>
+        </li>
+        <li class="flex  flex-align-center "><span>XXX优惠卷</span><span>2017-03-03 10:10:10</span><span>兑换</span></li>
+        <li class="flex  flex-align-center "><span>XXX优惠卷</span><span>2017-03-03 10:10:10</span><span>兑换,<i class="dui">现在兑换</i></span></li>
+
+      </ul>
+      <input type="button" value="确定" class="ensure ok">
+    </div>
+  </div>
+  <script src="js/lib/zepto.min.js"></script>
+  <script src="js/lib/iosSelect.js"></script>
+  <script src="js/lib/iscroll.js"></script>
+  <script src="js/components/areaData_v2.js"></script>
+  <script src="js/myAward.js"></script>
+</body>
+
+</html>

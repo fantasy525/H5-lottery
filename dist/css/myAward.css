@@ -1,0 +1,138 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #f1faff;
+}
+
+.header-ban {
+  height: 7rem;
+  background: url("../images/bk2.png") center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  padding-top: 0.293333rem;
+}
+
+.back {
+  display: inline-block;
+  color: #fff;
+  text-align: right;
+  margin-left: 0.36rem;
+}
+
+[data-dpr="1"] .back {
+  font-size: 12px;
+}
+
+[data-dpr="2"] .back {
+  font-size: 24px;
+}
+
+[data-dpr="3"] .back {
+  font-size: 36px;
+}
+
+.back i {
+  display: inline-block;
+  width: 0.186667rem;
+  height: 0.32rem;
+  background: url("../images/back.png") 0 0 no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  vertical-align: bottom;
+  margin-right: 0.173333rem;
+}
+
+.award-list {
+  padding: 0 0.353333rem;
+  width: 9.293333rem;
+}
+
+.list-head {
+  width: 8.693333rem;
+  height: 1.146667rem;
+  margin-top: -62px;
+  border: 0.013333rem solid #ececec;
+  -webkit-border-radius: 0.093333rem;
+  border-radius: 0.093333rem;
+  padding-left: 0.6rem;
+  line-height: 1.146667rem;
+  background-color: #ffffff;
+}
+
+.list-head span {
+  display: inline-block;
+  color: #72b026;
+}
+
+[data-dpr="1"] .list-head span {
+  font-size: 12px;
+}
+
+[data-dpr="2"] .list-head span {
+  font-size: 24px;
+}
+
+[data-dpr="3"] .list-head span {
+  font-size: 36px;
+}
+
+.list-head span:nth-of-type(2) {
+  margin-left: 1.586667rem;
+}
+
+.list-head span:nth-of-type(3) {
+  margin-left: 2.04rem;
+}
+
+.list-items {
+  color: #666;
+  border: 0.013333rem solid #ececec;
+  -webkit-border-radius: 0.093333rem;
+  padding: 0 0.2rem;
+  margin-top: 0.24rem;
+  background-color: #fff;
+}
+
+[data-dpr="1"] .list-items {
+  font-size: 10px;
+}
+
+[data-dpr="2"] .list-items {
+  font-size: 20px;
+}
+
+[data-dpr="3"] .list-items {
+  font-size: 30px;
+}
+
+.list-items li {
+  border-bottom: 0.013333rem solid #cdcdcd;
+  line-height: 0.346667rem;
+  padding: 0.346667rem 0 0.346667rem 0.346667rem;
+}
+
+.list-items li:last-child {
+  border-bottom: none;
+}
+
+.list-items li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.aw-name {
+  width: 2.88rem;
+  color: #333;
+}
+
+.aw-time {
+  width: 3.28rem;
+}
+
+.dui {
+  font-style: normal;
+  color: #6baa24;
+}
